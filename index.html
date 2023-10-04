@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script  src="https://unpkg.com/rxjs@%5E7/dist/bundles/rxjs.umd.min.js"></script> -->
+</head>
+<body>
+    <article>
+        <div class="main">
+            <h1>Student Information Table</h1>
+            <table id="studentTable" border="1">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <!-- <th>Subject</th> -->
+                        <th>Professional</th>
+                        <th id="studentAction">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentDataInfo">
+                </tbody>
+            </table>
+            <div id="edit-content" class="edit-content">
+                 <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="content">
+                        <div class="left">First Name:</div><div class="right"><input type="text" id="fname" name="fname" value=""></div>
+                        <div class="left">Last Name:</div><div class="right"><input type="text" id="lname" name="lname"></div>
+                        <div class="left">Professional:</div><div class="right"><input type="text" id="subject" name="subject"></div>
+                        <button id="content-save" > save </button>
+                        <button id="content-cancel">Cancel</button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id='message-content' class="message-content">
+                    <h4>Record Updated</h4>
+            </div>
+            <div id='messageDel-content' class="message-content">
+                <h4>Record Deleted Successfully</h4>
+        </div>
+        </div>
+    </article>
+    <script type="text/javascript" src="./promises.js"></script>
+    <!-- <script type="text/javascript" src="./observable.js"></script> -->
+    <!-- <script type="text/javascript" src="./example.js"></script> -->
+</body>
+</html>
